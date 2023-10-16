@@ -1,0 +1,26 @@
+/*Une image est utilisée en arrière plan du body*/
+body {
+  background-image: url("https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Fmacron.jpg?v=1617786950745");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+h1 {
+  font-style: bold;
+  color: #373fff;
+}
+
+/*Les images sont agencées ici*/
+#over {
+  width: 75%;
+  height: 75%;
+  position: sticky;
+}
+
+#retry {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+/*L'audio étant en auto-play et sans commandes, il n'y a aucune modification à apporter*/

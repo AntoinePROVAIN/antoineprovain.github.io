@@ -1,0 +1,49 @@
+
+
+body {
+    text-align : center;
+	border: 0;
+    margin: 0;
+	background-color : #F5F5DC;
+    width : 100%;
+}
+
+p {
+    
+}
+
+#tablo {
+    margin-top : 10%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+table {
+    font-weight: bold;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    color : brown;
+    /*margin-left: 5%;*/
+    
+}
+
+td {
+    /*border: 0;
+    margin: 0;*/
+    border : 1px solid rgb(22, 13, 13);
+    
+    padding: 12px;
+}
+
+
+
+h1 {
+    /**/
+    font-size: 4em;
+    text-decoration: underline;
+    color : #315e6b ;
+    /*text-align: center;*/
+    width: 100%;
+}
+
