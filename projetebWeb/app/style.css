@@ -1,0 +1,16 @@
+/*Une image est utilisée en arrière plan du body*/
+body {
+  background-image: url("https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Felysee.png?v=1617202583405");
+  background-attachment: fixed;
+  background-size: cover;
+}
+h1 {
+  font-style: bold;
+  color: #373fff;
+}
+/*Les images sont agencées ici*/
+#reponses {
+  margin: 15%;
+  justify-content: space-between;
+  display: flex;
+}
