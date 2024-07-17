@@ -1,0 +1,49 @@
+body {
+	text-align : center;
+	border : 0;
+	background-color:#F5F5DC;
+	margin : 0;
+	width : 100%;
+}
+
+
+
+#tablo {
+	margin-top : 10%;
+	margin-right : 5%;
+	margin-left : 5%;
+}
+
+table {
+	font-weight : bold;
+	font-family : arial, sans-serif;
+	border-collapse : collapse;
+	width : 100%;
+	color : brown;
+	border: 2px solid black;
+
+}
+
+td {
+	border : 2px solid rgb(22, 13, 13);
+	padding : 12px;
+}
+
+h1 {
+	font-size : 4em;
+	text-decoration: underline;
+	color : #315e6b;
+	width : 100%;
+}
+
+#a {
+	font-size : 2em;
+	text-align : left;
+	margin-left : 20%;
+}
+
+li {
+	margin-top: 3%;
+	color : brown;
+}
+
