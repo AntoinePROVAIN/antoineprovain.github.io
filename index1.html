@@ -2,7 +2,10 @@
     <html>
 
     <head>
-        <title>Sports</title>
+        <title>Antoine PROVAIN - Culture</title>
+        <link rel="icon" href="img/cercle1.png" type="image/png">
+        <link rel="shortcut icon" href="img/cercle1.png" type="img/x-icon">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>                        <!-- Font-family : barlow condensed-->
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&display=swap" rel="stylesheet">
@@ -10,125 +13,126 @@
 
     <body>
 
-    <h1>Sports</h1>
-    <h3>Football</h3>
-    <div>
-        <p><u><i>2007 - 2017 /</i></u> Pratiqué pendant pratiquement 10 ans, le football est le sport qui m'a permis de développer mon esprit d'équipe et le dépassement de soi !</p>
-        <img src="img/balloon.png">
-    </div>
+        <!-- premier grande image -->
+        <div class="foot top">
+            <div class="im left">
+                <img src="img/cinema.png" alt="" id="cercle">
+            </div>
 
-    <h3 class="h3">Judo</h3>
-    <div>
-        <img src="img/judo.png">
-        <p class="text"><u><i>2013 - 2016 /</i></u> Exercé durant mes années de collège, ce sport individuel m'a montré la rigueur et la détermination qu'il faut avoir pour parvenir à ces objectifs ! Obtenu ceinture bleu.</p>
-    </div>
-    
-    <h3>Tennis</h3>
-    <div>
-        <p><u><i>2017 - 2020 /</i></u> Pratiqué pendant mes années de lycée, j'ai beaucoup appris au niveau de mes capacités physiques et de ma vision du jeux. Apprendre à maîtriser son mental est primordial.</p>
-        <img src="img/tennis.png">
-    </div>
-    
-    <h3 class="h3" class="h3">Voile</h3>
-    <div>
-        <img src="img/bat.png">
-        <p class="text"><u><i>Vacances d'été /</i></u> Passant de nombreux étés au bord de l'eau, j'ai pris beaucoup de cours de Catamaran. Il faut être à l'écoute de ses coéquipiers pour que tout se passe bien.</p>
-    </div>
+            <div class="texte right">
+                <!-- <h1>Football</h1> -->
+                <p class="texte1">Cinéma</p>
+            </div>
+        </div>
 
-    <h3>Fitness</h3>
-    <div>
-        <p><u><i>Actuel /</i></u> J'ai démarré la musculation dans le but de développer mon corps et mon esprit en dépassant mes limites à chaque séances.</p>
-        <img src="img/muscu.png">
-    </div>
+        <!-- gros carre image diagonale -->
+        <div class="foot top">
+            <div class="texte2 left">
+                <p class="texte1">Animé</p>
+            </div>
 
+            <div class="im2 right">
+                <img src="img/anime.jpeg" alt="" id="cercle">
+            </div>
+        </div>
 
+        <div class="foot">
+            <div class="im2 left">
+                <img src="img/food.jpg" alt="" id="cercle">
+            </div>
 
-
+            <div class="texte2 right">
+                <p class="texte1">Découverte culinaire</p>
+            </div>
+        </div>
 
 
+        <style>
 
+            body {
+                margin: 0;
+                background:url(img/fond.jpg) left top repeat;
+                background-size:cover;
+                background-attachment: fixed;
+                overflow-x: hidden;
+            }
+
+            .foot {
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+                position: relative;
+            }
+
+            .im {
+                /* background-color: red; */
+                width: 65%;
+                /* height: 500px; */
+            }
+
+            #cercle {
+                height: 100%;
+                width: 100%;
+            }
+        
+            .texte {
+                width: 35%;
+                color: black;
+                background-color: white;
+                display: flex; /* Utiliser Flexbox pour centrer le texte */
+                justify-content: center; /* Centrer horizontalement */
+                align-items: center;
+                overflow: hidden; /* Masquer le texte qui dépasse */
+            }
+
+            .texte1 {
+                /* position: absolute; */
+                top: 50%;
+                /* width: 35%; */
+                overflow: hidden; /* Masquer le texte qui dépasse */
+                text-overflow: ellipsis; /* Ajouter des points de suspension si le texte dépasse */
+                text-align: center;
+                font-family:"Barlow Condensed", sans-serif;	
+                font-size: 3em;
+                color: transparent;
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: black;
+            }
+
+            .im2 {
+                background-color: red;
+                width: 50%;
+            }
+
+            .texte2 {
+                width: 50%;
+                color: black;
+                background-color: white;
+                display: flex; /* Utiliser Flexbox pour centrer le texte */
+                justify-content: center; /* Centrer horizontalement */
+                align-items: center;
+                overflow: hidden; /* Masquer le texte qui dépasse */
+            }
+
+            .right {
+                margin-right: 3%;
+            }
+
+            .left {
+                margin-left: 3%;
+            }
+
+            .top {
+                margin-top: 3%;
+            }
+
+            div {
+                margin: 0;
+            }
+
+
+        </style>
 
     </body>
-
-<style>
-
-    body {
-        background:url(img/fond.jpg) left top repeat;
-        background-size:auto;
-        background-attachment: fixed;
-        overflow-x: hidden;
-    }
-
-    h1 {
-        margin-top: 0;
-        text-align:center;
-        font-weight: 300;
-	    letter-spacing: 8px;
-        font-size: 12vw;
-        /* color: red; */
-        font-family: "Barlow Condensed";
-        color: transparent;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #f0f7f0;
-        text-transform: uppercase;
-    }
-
-    h3 {
-        font-weight: bold;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        margin-left: 3%;
-        color: rgb(165,42,42);
-        font-size: 2.5em;
-        font-family: "Ubuntu", "Tahoma", "Helvetica Neue", "Helvetica", "Arial",sans-serif;
-    }
-
-    .h3 {
-        font-weight: bold;
-        text-align: right;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        margin-right: 3%;
-        color: rgb(165,42,42);
-        font-size: 2.5em;
-        font-family: "Ubuntu", "Tahoma", "Helvetica Neue", "Helvetica", "Arial",sans-serif;
-    }
-
-    p {
-        text-align: justify;
-        color: white;
-        font-size: 23px;
-        padding: 40px ;
-        padding-top: 60px;
-        padding-right: 180px;
-    }
-
-    .text {
-        text-align: justify;
-        color: white;
-        font-size: 23px;
-        padding-top: 60px;
-        padding-left: 180px;
-    }
-
-    div {
-        border: solid 0.3em;
-        border-color: white; 
-        display: flex;
-        justify-content: space-between;
-        margin-left: 3%;
-        margin-right: 3%;
-        color: white;
-        font-family: "Ubuntu", "Tahoma", "Helvetica Neue", "Helvetica", "Arial",sans-serif;
-    }
-
-
-    img {
-        height: 200px;
-        padding: 40px;
-    }
-
-</style>
-
 </html>

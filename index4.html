@@ -2,7 +2,10 @@
     <html>
 
     <head>
-        <title>Voyages</title>
+        <title>Antoine PROVAIN - Culture</title>
+        <link rel="icon" href="img/cercle1.png" type="image/png">
+        <link rel="shortcut icon" href="img/cercle1.png" type="img/x-icon">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>                        <!-- Font-family : barlow condensed-->
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&display=swap" rel="stylesheet">
@@ -10,52 +13,167 @@
 
     <body>
 
-    <h1>Découverte Culinaire</h1>
-    
-    <h6>De la plus ancienne à la plus récente</h6>
+        <!-- premier grande image -->
+        <div class="foot top">
+            <div class="im left">
+                <img src="img/foot2.jpg" alt="" id="cercle">
+            </div>
 
-    <style>
+            <div class="texte right">
+                <!-- <h1>Football</h1> -->
+                <p class="texte1">Football<br>10 ans</p>
+            </div>
+        </div>
+
+        <!-- gros carre image diagonale -->
+        <div class="foot top">
+            <div class="texte2 left">
+                <p class="texte1">Judo<br>Ceinture bleue</p>
+            </div>
+
+            <div class="im2 right">
+                <img src="img/judo.jpg" alt="" id="cercle">
+            </div>
+        </div>
+
+        <div class="foot">
+            <div class="im2 left">
+                <img src="img/tennis.jpg" alt="" id="cercle">
+            </div>
+
+            <div class="texte2 right">
+                <p class="texte1">Tennis<br>classé 40</p>
+            </div>
+        </div>
+
+        <!-- deuxieme grande image -->
+        <div class="foot top">
+            <div class="texte left">
+                <p class="texte1">Voile</p>
+            </div>
+
+            <div class="im right">
+                <img src="img/cata.jpg" alt="" id="cercle">
+            </div>
+        </div>
+
+        <!-- deuxieme carre img diagonale -->
+        <div class="foot top">
+            <div class="im2 left">
+                <img src="img/fit.jpg" alt="" id="cercle">
+            </div>
+
+            <div class="texte2 right">
+                <p class="texte1">Fitness</p>
+            </div>
+        </div>
+
+        <div class="foot">
+            <div class="texte2 left">
+                <p class="texte1">Course</p>
+            </div>
+
+            <div class="im2 right">
+                <img src="img/course.png" alt="" id="cercle">
+            </div>
+        </div>
 
 
-body {
-            background:url(img/fond.jpg) left top repeat;
-            background-size:auto;
-            background-attachment: fixed;
-        }
+        <style>
 
-        h1 {
-            margin-top: 0;
-            text-align:center;
-            font-weight: 300;
-            letter-spacing: 8px;
-            font-size: 9vw;
-            /* color: red; */
-            font-family: "Barlow Condensed";
-            color: transparent;
-            -webkit-text-fill-color: transparent;
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: #f0f7f0;
-            text-transform: uppercase;
-        }
+            body {
+                margin: 0;
+                background:url(img/fond.jpg) left top repeat;
+                background-size:cover;
+                background-attachment: fixed;
+                overflow-x: hidden;
+            }
 
-        h6 {
-            font-style: italic;
-            font-size: 1.4em;
-            color: rgb(165,42,42);
-            text-align: center;
-        }
+            .foot {
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+                position: relative;
+            }
 
-        div {
-            border: solid 0.3em;
-            border-color: white; 
-            display: flex;
-            justify-content: space-between;
-            margin-left: 3%;
-            margin-right: 3%;
-            color: white;
-            font-family: "Ubuntu", "Tahoma", "Helvetica Neue", "Helvetica", "Arial",sans-serif;
-        }
-    </style>
+            .im {
+                /* background-color: red; */
+                width: 65%;
+                /* height: 500px; */
+            }
+
+            #cercle {
+                height: 100%;
+                width: 100%;
+            }
+        
+            .texte {
+                width: 35%;
+                color: black;
+                background-color: white;
+                display: flex; /* Utiliser Flexbox pour centrer le texte */
+                justify-content: center; /* Centrer horizontalement */
+                align-items: center;
+                overflow: hidden; /* Masquer le texte qui dépasse */
+            }
+
+            .texte1 {
+                /* position: absolute; */
+                top: 50%;
+                /* width: 35%; */
+                overflow: hidden; /* Masquer le texte qui dépasse */
+                text-overflow: ellipsis; /* Ajouter des points de suspension si le texte dépasse */
+                text-align: center;
+                font-family:"Barlow Condensed", sans-serif;	
+                font-size: 3em;
+                color: transparent;
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: black;
+            }
+
+            .im2 {
+                background-color: red;
+                width: 50%;
+            }
+
+            .texte2 {
+                width: 50%;
+                color: black;
+                background-color: white;
+                display: flex; /* Utiliser Flexbox pour centrer le texte */
+                justify-content: center; /* Centrer horizontalement */
+                align-items: center;
+                overflow: hidden; /* Masquer le texte qui dépasse */
+            }
+
+            .texte3 {
+                /* position: absolute; */
+                top: 50%;
+                width: 35%;
+                overflow: hidden; /* Masquer le texte qui dépasse */
+                text-overflow: ellipsis; /* Ajouter des points de suspension si le texte dépasse */
+                text-align: justify;
+            }
+
+            .right {
+                margin-right: 3%;
+            }
+
+            .left {
+                margin-left: 3%;
+            }
+
+            .top {
+                margin-top: 3%;
+            }
+
+            div {
+                margin: 0;
+            }
+
+
+        </style>
 
     </body>
-</html> 
+</html>
