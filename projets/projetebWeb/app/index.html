@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta
+      charset="utf-8"
+    />
+
+    <title>Président.fr</title>
+
+    <!--Liaison avec le fichier style-->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!--Liaison avec le fichier script-->
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <center>
+      
+      <!--Question-->
+      
+      <img
+        src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Ftext-1617204208184.png?v=1617204224892"
+      />
+
+      <!--Réponses (chacune menant à un site et changeant d'épaisseur quand la souris la survole)-->
+      <div id="reponses">
+        <a href="oui.html">
+          <img
+            id="oui"
+            onmouseover="this.src='https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2FOuig.png?v=1617204418350'"
+            src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2FOui.png?v=1617204418350"
+            onmouseout="this.src='https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2FOui.png?v=1617204418350'"
+          />
+        </a>
+
+        <a href="non.html"
+          ><img
+            id="non"
+            onmouseover="this.src='https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2FNong.png?v=1617204418348'"
+            src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2FNon.png?v=1617204418349"
+            onmouseout="this.src='https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2FNon.png?v=1617204418349'"
+          />
+        </a>
+      </div>
+    </center>
+  </body>
+</html>

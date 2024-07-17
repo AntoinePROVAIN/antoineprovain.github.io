@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta
+      charset="utf-8"
+      http-equiv="Content-Script-Type"
+      content="text/javascript"
+    />
+    <title>Président.fr</title>
+
+    <!--Liaison avec le fichier style-->
+    <link href="ouistyle.css" rel="stylesheet" type="text/css" />
+
+    <!--Liaison avec le fichier script-->
+    <script type="text/javascript" src="ouiscript.js"></script>
+  </head>
+  <body onload="initVar()">
+    <!--Partie pop-up-->
+    <article id="popup">
+      <p id="croix" onclick="fermer()">
+        X
+      </p>
+      <a id="lien" href="#bas" onclick="fermer()">
+        <p id="rejoignez">
+          Rejoignez notre page !
+        </p>
+      </a>
+    </article>
+
+    <!--Partie titre et Menu-->
+    <div style="text-align:center;" id="tout">
+      <h1 id="haut">MINISTRES</h1>
+
+      <ul id="menu">
+        <li><a href="#diapo" title="titre1">Diaporama</a></li>
+        <li><a href="#select" title="titre2">Selection de la semaine</a></li>
+        <li><a href="#liste" title="titre3">Liste des ministres</a></li>
+        <li><a href="#leChoix" title="titre4">Votre choix</a></li>
+        <li><a href="#bas" title="titre5">Reseaux sociaux</a></li>
+        <li><a href="oui4.html#panier" title="titre6">Panier</a></li>
+      </ul>
+
+      <br />
+
+      <!--Partie introduction-->
+      <div id="main" style="text-align:center;">
+        <br />
+
+        <h2>BIENVENUE</h2>
+        <p id="bvn">
+          Bonjour à toutes et à tous et bienvenue ! Si vous êtes là aujourd'hui
+          c'est parce que vous avez répondu OUI à la question "Etes-vous
+          président ?". Vous avez pris la bonne décision. Aujourd'hui est un
+          grand jour, le jour de choisir, le jour de commander, le jour de
+          déterminer qui seront vos fidèles compagnons ! Sur ce, je vous laisse
+          à la découverte de ce magnifique panier rempli des perles du jour.
+        </p>
+        <br />
+
+        <!--Partie diaporama-->
+        <hr />
+        <h3 id="diapo">Plongez dans le monde fabuleux des ministres !</h3>
+        <br />
+        <img
+          id="myImg"
+          src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Fmini.jpg?v=1618409383509"
+          height="200"
+        /><br /><br />
+        <button onclick="prev()">
+          <img
+            id="précédent"
+            src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2FBlack_Arrow_ee.png?v=1618412619012"
+          />
+        </button>
+        <button onclick="startstop()">
+          <img
+            id="play"
+            src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2F15109-200.png?v=1618411032446"
+          />
+        </button>
+        <button onclick="next()">
+          <img
+            id="suivant"
+            src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2FBlack_Arrow_Up.svg.png?v=1618412620626"
+          /></button
+        ><br /><br />
+        
+        
+        <a href="#haut" class="retour">Haut de page</a>
+        <br /><br />
+
+        <!--Partie sélection de la semaine-->
+        <hr />
+        <h3 id="select">SELECTION DE LA SEMAINE</h3>
+
+        <div id="premiere">
+          <a href="oui1.html"
+            ><img
+              src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Fmini.jpg?v=1618409383509"
+              height="150"
+              class="img"
+          /></a>
+
+          <a href="oui2.html"
+            ><img
+              src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Fmini1.jpg?v=1618409402282"
+              height="150"
+              class="img"
+          /></a>
+
+          <a href="oui3.html"
+            ><img
+              src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Fmini2.jpg?v=1618409408552"
+              height="150"
+              class="img"
+          /></a>
+        </div>
+
+        <div id="nom">
+          <p>Jean Claude Belmondo</p>
+          <p>Louis Vignac</p>
+          <p>Roger le boucher</p>
+        </div>
+
+        <a href="#haut" class="retour">Haut de page</a>
+        <br />
+
+        <!--Partie liste des ministres-->
+        <hr />
+        <h3 id="liste">Faites les bons choix !</h3>
+        <br />
+        <div class="presentation">
+          <img
+            class="ministres"
+            src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Fmini.jpg?v=1618409383509"
+          />
+
+          <p
+            class="p"
+            id="mini"
+            onmouseover="afficheMini()"
+            onmouseout="cache()"
+          >
+            Jean Claude Belmondo
+          </p>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="presentation">
+          <img
+            class="ministres"
+            src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Fmini1.jpg?v=1618409402282"
+          />
+
+          <p
+            class="p"
+            id="mini1"
+            onmouseover="afficheMini1()"
+            onmouseout="cache1()"
+          >
+            Louis Vignac
+          </p>
+        </div>
+
+        <br /><br />
+
+        <div class="presentation">
+          <img
+            class="ministres"
+            src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Ff85f0200-331a-4de4-b01d-09c0a67f4030_Sans%20titre.png?v=1619181742264ze+"
+          />
+
+          <p
+            class="p"
+            id="mini2"
+            onmouseover="afficheMini2()"
+            onmouseout="cache2()"
+          >
+            Roger le Boucher
+          </p>
+        </div>
+
+        <br /><br />
+
+        <div class="presentation">
+          <img
+            class="ministres"
+            src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Fmini3.jpg?v=1618409416365"
+          />
+
+          <p
+            class="p"
+            id="mini3"
+            onmouseover="afficheMini3()"
+            onmouseout="cache3()"
+          >
+            Patrick le plaquiste
+          </p>
+        </div>
+        <br /><br />
+
+        <div class="presentation">
+          <img
+            class="ministres"
+            src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Fminis4.jpg?v=1619617409976"
+          />
+
+          <p
+            class="p"
+            id="mini4"
+            onmouseover="afficheMini4()"
+            onmouseout="cache4()"
+          >
+            Scharlene Miappa
+          </p>
+        </div>
+        <br /><br />
+
+        <div class="presentation">
+          <img
+            class="ministres"
+            src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Fminis5.jpg?v=1619617498391"
+          />
+
+          <p
+            class="p"
+            id="mini5"
+            onmouseover="afficheMini5()"
+            onmouseout="cache5()"
+          >
+            Ribéry
+          </p>
+        </div>
+        <br /><br />
+
+        <div class="presentation">
+          <img
+            class="ministres"
+            src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Fminis6.jpg?v=1619617703109"
+          />
+
+          <p
+            class="p"
+            id="mini6"
+            onmouseover="afficheMini6()"
+            onmouseout="cache6()"
+          >
+            Salade César
+          </p>
+        </div>
+        <br /><br />
+
+        <div class="presentation">
+          <img
+            class="ministres"
+            src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Fminis7.jpg?v=1619617711361"
+          />
+
+          <p
+            class="p"
+            id="mini7"
+            onmouseover="afficheMini7()"
+            onmouseout="cache7()"
+          >
+            Cléoplatre
+          </p>
+        </div>
+        <br /><br />
+
+        <div class="presentation">
+          <img
+            class="ministres"
+            src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Fminis8.jpg?v=1619617717881"
+          />
+
+          <p
+            class="p"
+            id="mini8"
+            onmouseover="afficheMini8()"
+            onmouseout="cache8()"
+          >
+            Frenssois Eaulande
+          </p>
+        </div>
+        <br /><br />
+
+        <a href="#haut" class="retour">Haut de page</a>
+
+        <!--Partie sélection des ministres-->
+        <hr />
+        <br />
+        <h3 id="leChoix">Votre choix</h3>
+        <br />
+
+        <div class="choix">
+          <a class="zoom" onclick="choix1()"
+            ><img
+              style="border : 0px solid black;"
+              id="image1"
+              height="100"
+              src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Fminii.jpg?v=1619613677361"
+          /></a>
+          <a class="zoom" onclick="choix2()"
+            ><img
+              style="border : 0px solid black;"
+              id="image2"
+              height="100"
+              src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Fminii1.jpg?v=1619613844878"
+          /></a>
+          <a class="zoom" onclick="choix3()"
+            ><img
+              style="border : 0px solid black;"
+              id="image3"
+              height="100"
+              src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Fminii2.jpg?v=1619613858673"
+          /></a>
+        </div>
+        <br /><br /><br />
+
+        <div class="choix">
+          <a class="zoom" onclick="choix4()"
+            ><img
+              style="border : 0px solid black;"
+              id="image4"
+              height="100"
+              src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Fminii3.jpg?v=1619613870543"
+          /></a>
+          <a class="zoom" onclick="choix5()"
+            ><img
+              style="border : 0px solid black;"
+              id="image5"
+              height="100"
+              src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Fminii4.jpg?v=1619613881635"
+          /></a>
+          <a class="zoom" onclick="choix6()"
+            ><img
+              style="border : 0px solid black;"
+              id="image6"
+              height="100"
+              src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Fminii5.jpg?v=1619613894175"
+          /></a>
+        </div>
+        <br /><br /><br />
+
+        <div class="choix">
+          <a class="zoom" onclick="choix7()"
+            ><img
+              style="border : 0px solid black;"
+              id="image7"
+              height="100"
+              src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Fminii6.jpg?v=1619613905045"
+            />
+          </a>
+          <a class="zoom" onclick="choix8()"
+            ><img
+              style="border : 0px solid black;"
+              id="image8"
+              height="100"
+              src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Fminii7.jpg?v=1619613748489"
+          /></a>
+          <a class="zoom" onclick="choix9()"
+            ><img
+              style="border : 0px solid black;"
+              id="image9"
+              height="100"
+              src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Fminii8.jpg?v=1619613755270"
+          /></a>
+        </div>
+        <br /><br />
+      </div>
+      <p id="achat">
+        Valider la commande !
+      </p>
+      <br />
+      <!--<a href="#haut" onclick="acheter()">-->
+      <a href="oui4.html#panier" onclick="commander()">
+        <img
+          src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2F466b1e156c620fa4c0f8d31fef26bd7f.png?v=1619797230163"
+          height="100"
+        />
+      </a>
+      <br />
+
+      <br /><br />
+      <a href="#haut" class="retour">Haut de page</a>
+    </div>
+
+    <!--Partie pied de page-->
+    <div id="bas">
+      <p id="pied">
+        <br />
+        Auteurs : Les Antoine's<br /><br />
+        <a
+          id="mail"
+          href="mailto:NousContacterACetteAdresse@quelqueChose.com"
+          >NousContacterACetteAdresse@quelqueChose.com</a
+        ><br /><br />Retrouvez nous sur :
+      </p>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <div id="sociaux">
+        <a href="https://www.instagram.com/?hl=fr"
+          ><img
+            src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Finsta.png?v=1618415508111"
+            height="75"
+          />
+        </a>
+        <p>
+          Instagram
+        </p>
+        <a href="https://twitter.com/?lang=fr"
+          ><img
+            src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Flogo-twitter-circle-png-transparent-image-1.png?v=1619179540304"
+            height="75"
+        /></a>
+        <p>
+          Twitter
+        </p>
+        <a href="https://fr-fr.facebook.com"
+          ><img
+            src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Ffacebook_logos_PNG19757.png?v=1619179667310"
+            height="75"
+        /></a>
+        <p>
+          Facebook
+        </p>
+      </div>
+
+      <br />
+      <br />
+      <p class="com">
+        Laissez nous un commentaire !
+      </p>
+      <br />
+
+      <textarea
+        id="textbox"
+        class="com"
+        cols="120"
+        rows="2"
+        placeholder="Commentaires"
+      ></textarea>
+      <br />
+      <button class="com" onclick="envoyer()">Envoyer</button><br /><br /><br />
+
+      <a href="#haut" class="retour com">Haut de page</a>
+      
+      <br>
+      <br />
+    </div>
+  </body>
+</html>

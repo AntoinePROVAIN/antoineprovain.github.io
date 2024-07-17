@@ -1,0 +1,12 @@
+Numéro de page
+Un sommaire (important)
+Petite introduction (presentation/ site et equipe)
+Description détaillés
+description fonctionnelle
+screen shots plus détaillés avec boutons/liens
+
+
+
+Mettre pas mal de commentaire dans la partie de java surtout pour les fonctions
+Pas trop dans le html pour ne pas alourdir le code
+En css c'est assez cohérent donc pas trop besoin

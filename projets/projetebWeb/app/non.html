@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta
+      charset="utf-8"
+      http-equiv="Content-Script-Type"
+      content="text/javascript"
+    />
+
+    <title>Plèbe.html</title>
+
+    <!--Liaison avec le fichier style-->
+    <link href="nonstyle.css" rel="stylesheet" type="text/css" />
+
+    <!--Liaison avec le fichier script-->
+    <script type="text/javascript" src="nonscript.js"></script>
+  </head>
+  <body>
+    <!--Chargement de l'image et lancement automatique de l'audio-->
+    <center>
+      <img
+        id="over"
+        src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2FGame_Over.png?v=1617787675842"
+        onload="cligne()"
+      />
+
+      <audio autoplay>
+        <source
+          src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2FFrench%20National%20Anthem%20-%20La%20Marseillaise%20on%20Kazoo%20(192%20%20kbps).mp3?v=1617785424333"
+          type="audio/mp3"
+        />
+      </audio>
+    </center>
+<!--Retour sur le site-->
+    <a href="index.html"
+      ><img
+        id="retry"
+        src="https://cdn.glitch.com/f85f0200-331a-4de4-b01d-09c0a67f4030%2Fretry_logo.png?v=1617788472160"
+    /></a>
+  </body>
+</html>
