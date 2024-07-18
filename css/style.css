@@ -1174,6 +1174,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .im {
     border-radius: 50%;
     height:150px;
+	transition: all 0.2s;
+}	
+
+.im:hover {
+	transform: scale(1.1);
 }
 
 .inf {
