@@ -266,7 +266,6 @@ h1 {
 
 .small-logo{ 
 	padding:0 32px;
-	
 }
 
 #cercle {
@@ -1259,5 +1258,29 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
    margin-left: 0;
 }
 
-/* index4 */
+/* bouton haut page */
 
+.fixed-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: rgba(219, 24, 24);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	z-index: 1000;
+}
+
+.fixed-button:hover {
+    background-color: rgba(219, 24, 24);
+}
+
+.haut {
+	color: white;
+}
+
+.haut:visited {
+	color: white;
+}
