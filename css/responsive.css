@@ -103,3 +103,13 @@
 	.portfolioContainer{ width:280px !important; margin:0 auto !important } 
 	
 }
+
+.responsive-img {
+    height: 260.8px;
+}
+
+@media (max-width: 768px) {
+    .responsive-img {
+        height: 201.16px;
+    }
+}

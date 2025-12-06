@@ -549,12 +549,12 @@ about-content{
 	margin-bottom:30px;
 	height:350px;
 	width:350px;
-	overflow:hidden;
+	/* overflow:hidden; */
 	float:left;
 	padding:0;
 }
 .Portfolio-box img{
-	margin-bottom:25px;
+	/* margin-bottom:25px; */
 	transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
 	-webkit-transition:all 0.3s ease-in-out;
@@ -1283,4 +1283,67 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
 .haut:visited {
 	color: white;
+}
+
+/* bouton experiences */
+.portfolio-buttons {
+    /* margin: 15px 0; */
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    justify-content: center;
+}
+
+.portfolio-button {
+    margin: 10px 0;
+	background-color: #28a745;
+    color: white;
+	padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.portfolio-button:hover {
+	cursor: pointer;
+	background-color: #218838;
+}
+
+.portfolio-button a, .portfolio-buttons a {
+	color: white;
+	text-decoration: none;
+}
+
+.btn-demo, .btn-presentation {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.btn-demo {
+    background-color: #007bff;
+    color: white;
+	width: 100%;
+}
+
+.btn-presentation {
+    background-color: #28a745;
+    color: white;
+	width: 100%;
+}
+
+.btn-demo:hover {
+	cursor: pointer;
+    background-color: #0056b3;
+}
+
+.btn-presentation:hover {
+    cursor: pointer;
+	background-color: #218838;
 }
