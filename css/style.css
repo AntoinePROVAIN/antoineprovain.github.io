@@ -340,7 +340,7 @@ about-content{
 .sections3{
     position: relative;
     overflow: hidden;
-	padding:80px 100px 0;
+	padding:0 100px 0;
 	background-color: white;
 }
 .proj {
@@ -560,6 +560,7 @@ about-content{
 	-moz-transition:all 0.3s ease-in-out;
 	-webkit-transition:all 0.3s ease-in-out;
 	border-radius: 6px;
+	border: 1px solid #ddd;
 }
 
 .Portfolio-box img:hover {
@@ -1354,6 +1355,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 	color: darkslategray;
 }
 
+.portfolio-buttons.btn-presentation a {
+    color: white;
+}
+
 .btn-demo {
     background-color: white;
 	border: 2px solid darkslategray;
@@ -1364,6 +1369,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     background-color: transparent;
 	border: 2px solid white;
     color: white;
+}
+
+.portfolio-button.not-allowed .full-clickable {
+    cursor: not-allowed;
 }
 
 .btn-demo:hover {
@@ -1377,4 +1386,13 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     cursor: pointer;
 	color: darkslategray;
 	background-color: rgb(255, 255, 255, 0.9);
+}
+
+.full-clickable {
+    display: block; /* Important : transforme le lien en bloc */
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    /* color: white;
+    text-align: center; */
 }
