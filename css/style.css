@@ -534,7 +534,7 @@ about-content{
 	-webkit-transition:all 0.3s ease-in-out;
 }
 .Portfolio-nav li a:hover{
-	border: solid #ff2b4a;
+	border: 1px solid #ff2b4a;
 	background:#070707;
 	color:#fff;
 	text-decoration:none;
@@ -568,7 +568,7 @@ about-content{
 }
 
 .Portfolio-nav li a.current{
-	border: solid #ff2b4a;
+	border: 1px solid #ff2b4a;
 	background:#070707;	
 	color:#fff;
 	text-decoration:none;
